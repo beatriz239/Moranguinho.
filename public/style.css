@@ -1,0 +1,175 @@
+/* Resetando algumas propriedades padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3f6;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Container para alinhar o conteúdo */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff6f81;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-home {
+    background-color: #ffb3c6;
+}
+
+.section-sobre {
+    background-color: #ffccf2;
+}
+
+.section-personagens {
+    background-color: #d3f1d1;
+}
+
+.section-contato {
+    background-color: #ff6f81;
+}
+
+h2 {
+    color: #cc0066;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Cards de personagens */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os cards se ajustem para a próxima linha se o espaço for pequeno */
+    margin-top: 20px; /* Para dar um pouco de espaço acima */
+}
+
+.card {
+    background-color: #ff99cc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 200px; /* Garante que cada card tenha pelo menos 200px de largura */
+    max-width: 250px; /* Limita o tamanho máximo de cada card */
+    margin: 10px; /* Dá um pequeno espaçamento entre os cards */
+}
+
+.card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 120px; /* Define um tamanho fixo para as imagens */
+    height: 120px; /* Garantir que as imagens fiquem do mesmo tamanho */
+    object-fit: cover; /* Assegura que a imagem não distorça e preencha o espaço */
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #cc0066;
+}
+
+/* Formulário de contato */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ff6f81;
+    font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    background-color: #fff1f6;
+}
+
+form textarea {
+    background-color: #fff1f6;
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #cc0066;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+form button:hover {
+    background-color: #ff3366;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffccf2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #666;
+}
